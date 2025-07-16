@@ -3,7 +3,8 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches: [pages]
-
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
